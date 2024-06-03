@@ -76,7 +76,7 @@ describe('TemplateService', () => {
       assert.fileContent(expectedApexClassPath, expectedApexClassContent);
       assert.fileContent(
         expectedApexClassMetaPath,
-        expectedApexClassMetaContent
+        expectedApexClassMetaContent.strip()
       );
     });
   });
@@ -138,7 +138,7 @@ describe('TemplateService', () => {
       assert.fileContent(expectedApexClassPath, expectedApexClassContent);
       assert.fileContent(
         expectedApexClassMetaPath,
-        expectedApexClassMetaContent
+        expectedApexClassMetaContent.strip()
       );
     });
 
